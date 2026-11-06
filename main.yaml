@@ -1,5 +1,6 @@
 - name: ping the server
   hosts: all
+  become: yes
   tasks:
   - name: ping the server
     ansible.builtin.ping:
@@ -7,3 +8,15 @@
   - name: print hi
     debug:
       msg: "Hi Mahendra"
+
+
+  - name: install nginx
+    dnf:
+      name: nginx
+      state: present
+
+
+  - name: start nginx
+    service:
+    name: nginx
+    state: started
