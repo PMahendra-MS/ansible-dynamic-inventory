@@ -12,3 +12,4 @@ hostnames:
 
 keyed_groups:
   - key: tag.Name
+    prefix: tag_Name
