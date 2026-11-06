@@ -11,5 +11,4 @@ hostnames:
 - private-ip-address
 
 keyed_groups:
-  - key: tag.Name
-    prefix: tag_Name
+  - key: tags.Name
