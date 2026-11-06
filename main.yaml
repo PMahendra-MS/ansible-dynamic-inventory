@@ -3,3 +3,7 @@
   tasks:
   - name: ping the server
     ansible.builtin.ping:
+
+  - name: print hi
+    debug:
+      msg: "Hi Mahendra"
