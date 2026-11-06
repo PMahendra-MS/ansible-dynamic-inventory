@@ -9,14 +9,13 @@
     debug:
       msg: "Hi Mahendra"
 
-
   - name: install nginx
-    apt:
+    dnf:
       name: nginx
       state: present
 
-
   - name: start nginx
     service:
-    state: started
-    name: nginx
+      name: nginx
+      state: started
+      enabled: yes
